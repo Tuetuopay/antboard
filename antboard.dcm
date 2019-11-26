@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AO3402
+D 30V Vds, 4A Id, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.aosmd.com/pdfs/datasheet/AO3402.pdf
+$ENDCMP
+#
+#End Doc Library
