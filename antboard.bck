@@ -6,4 +6,24 @@ K N-Channel MOSFET
 F http://www.aosmd.com/pdfs/datasheet/AO3402.pdf
 $ENDCMP
 #
+$CMP PAVCC
+D Power symbol creates a global label with name "PAVCC"
+K power-flag
+$ENDCMP
+#
+$CMP PBVCC
+D Power symbol creates a global label with name "PBVCC"
+K power-flag
+$ENDCMP
+#
+$CMP PCVCC
+D Power symbol creates a global label with name "PCVCC"
+K power-flag
+$ENDCMP
+#
+$CMP TPS7A7100
+D 1-A, Fast-Transient,Low-Dropout Programmable Voltage Regulator
+F https://www.ti.com/lit/ds/symlink/tps7a7100.pdf
+$ENDCMP
+#
 #End Doc Library
