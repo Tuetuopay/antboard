@@ -6,6 +6,16 @@ K N-Channel MOSFET
 F http://www.aosmd.com/pdfs/datasheet/AO3402.pdf
 $ENDCMP
 #
+$CMP K1-5202UA-03
+D 5-way directional stick switch
+F https://datasheet.lcsc.com/szlcsc/1809211421_Korean-Hroparts-Elec-K1-5202UA-03_C145899.pdf
+$ENDCMP
+#
+$CMP OLED_0.96"_SSD1306
+D 0.96" 128x64 SPI OLED
+F https://datasheet.lcsc.com/szlcsc/1809201020_Jixin-JX04010101_C131691.pdf
+$ENDCMP
+#
 $CMP PAVCC
 D Power symbol creates a global label with name "PAVCC"
 K power-flag
