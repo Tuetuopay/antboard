@@ -32,7 +32,7 @@ AR Path="/5DF7E971/5DFC7A1F" Ref="Y?"  Part="1"
 AR Path="/5DFC2583/5DFC7A1F" Ref="Y2"  Part="1" 
 F 0 "Y2" H 3800 4218 50  0000 C CNN
 F 1 "8M" H 3800 4127 50  0000 C CNN
-F 2 "Crystal:Crystal_HC52-U_Vertical" H 3800 3950 50  0001 C CNN
+F 2 "Crystal:Crystal_HC18-U_Vertical" H 3800 3950 50  0001 C CNN
 F 3 "~" H 3800 3950 50  0001 C CNN
 	1    3800 3950
 	1    0    0    -1  

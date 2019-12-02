@@ -1,4 +1,4 @@
-(module K1-5202UA-03 (layer F.Cu) (tedit 5DE06AF2)
+(module K1-5202UA-03 (layer F.Cu) (tedit 5DE12A7E)
   (fp_text reference REF** (at 0 -6.2) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -31,4 +31,9 @@
   (pad 6 smd rect (at 3.3 1.4) (size 1.4 1.1) (layers F.Cu F.Paste F.Mask))
   (pad ~ smd rect (at 0 4.05) (size 2 1.8) (layers F.Cu F.Paste F.Mask))
   (pad ~ smd rect (at 0 -4.05) (size 2 1.8) (layers F.Cu F.Paste F.Mask))
+  (model ${KIPRJMOD}/3d/K1-5202UA-03.step
+    (at (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )
