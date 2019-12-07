@@ -26,19 +26,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/txb0104.pdf" H 3910 4945 50  0001 C CNN
 	1    3800 4850
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_02x10_Odd_Even J?
-U 1 1 5E95553C
-P 5300 3800
-AR Path="/5DFC2583/5E95553C" Ref="J?"  Part="1" 
-AR Path="/5E933CA7/5E95553C" Ref="J4"  Part="1" 
-F 0 "J4" H 5350 4417 50  0000 C CNN
-F 1 "Conn_02x10_Odd_Even" H 5350 4326 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_2x10_P1.27mm_Vertical_SMD" H 5300 3800 50  0001 C CNN
-F 3 "~" H 5300 3800 50  0001 C CNN
-	1    5300 3800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5000 3400 5100 3400
 Wire Wire Line
@@ -65,7 +52,7 @@ AR Path="/5DFC2583/5E95554B" Ref="U?"  Part="1"
 AR Path="/5E933CA7/5E95554B" Ref="U8"  Part="1" 
 F 0 "U8" H 3500 2100 50  0000 C CNN
 F 1 "TXB0108DQSR" H 3300 2000 50  0000 C CNN
-F 2 "Package_SON:USON-20_2x4mm_P0.4mm" H 3800 2050 50  0001 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 3800 2050 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/txb0108.pdf" H 3800 2700 50  0001 C CNN
 	1    3800 2800
 	1    0    0    -1  
@@ -217,7 +204,7 @@ AR Path="/5DFC2583/5E9555A7" Ref="U?"  Part="1"
 AR Path="/5E933CA7/5E9555A7" Ref="U9"  Part="1" 
 F 0 "U9" H 8200 4100 50  0000 C CNN
 F 1 "TXB0108DQSR" H 8000 4000 50  0000 C CNN
-F 2 "Package_SON:USON-20_2x4mm_P0.4mm" H 8500 4050 50  0001 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 8500 4050 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/txb0108.pdf" H 8500 4700 50  0001 C CNN
 	1    8500 4800
 	1    0    0    -1  
@@ -295,50 +282,50 @@ F 3 "" H 8300 4000 50  0001 C CNN
 	1    8300 4000
 	1    0    0    -1  
 $EndComp
-Text Label 3100 2500 0    50   ~ 0
+Text Label 3100 4750 0    50   ~ 0
 PA0
 Wire Wire Line
-	3400 2500 3100 2500
-Text Label 3100 2600 0    50   ~ 0
+	3400 4750 3100 4750
+Text Label 3100 4550 0    50   ~ 0
 PA1
 Wire Wire Line
-	3400 2600 3100 2600
-Text Label 3100 2700 0    50   ~ 0
+	3400 4550 3100 4550
+Text Label 3100 3200 0    50   ~ 0
 PA2
 Wire Wire Line
-	3400 2700 3100 2700
-Text Label 3100 2800 0    50   ~ 0
+	3400 3200 3100 3200
+Text Label 3100 3100 0    50   ~ 0
 PA3
 Wire Wire Line
-	3400 2800 3100 2800
-Text Label 3100 2900 0    50   ~ 0
+	3400 3100 3100 3100
+Text Label 3100 3000 0    50   ~ 0
 PA4
 Wire Wire Line
-	3400 2900 3100 2900
-Text Label 3100 3000 0    50   ~ 0
+	3400 3000 3100 3000
+Text Label 3100 2900 0    50   ~ 0
 PA5
 Wire Wire Line
-	3400 3000 3100 3000
-Text Label 3100 3100 0    50   ~ 0
+	3400 2900 3100 2900
+Text Label 3100 2800 0    50   ~ 0
 PA6
 Wire Wire Line
-	3400 3100 3100 3100
-Text Label 3100 3200 0    50   ~ 0
+	3400 2800 3100 2800
+Text Label 3100 2700 0    50   ~ 0
 PA7
 Wire Wire Line
-	3400 3200 3100 3200
+	3400 2700 3100 2700
 Text Label 3100 2400 0    50   ~ 0
 PAOE
 Wire Wire Line
 	3400 2400 3100 2400
-Text Label 3100 4550 0    50   ~ 0
+Text Label 3100 2600 0    50   ~ 0
 PA8
 Wire Wire Line
-	3400 4550 3100 4550
-Text Label 3100 4750 0    50   ~ 0
+	3400 2600 3100 2600
+Text Label 3100 2500 0    50   ~ 0
 PA9
 Wire Wire Line
-	3400 4750 3100 4750
+	3400 2500 3100 2500
 Text Label 3100 4350 0    50   ~ 0
 PAOE
 Wire Wire Line
@@ -364,7 +351,7 @@ AR Path="/5DFC2583/5E9555F0" Ref="U?"  Part="1"
 AR Path="/5E933CA7/5E9555F0" Ref="U7"  Part="1" 
 F 0 "U7" H 8200 1950 50  0000 C CNN
 F 1 "TXB0108DQSR" H 8000 1850 50  0000 C CNN
-F 2 "Package_SON:USON-20_2x4mm_P0.4mm" H 8500 1900 50  0001 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 8500 1900 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/txb0108.pdf" H 8500 2550 50  0001 C CNN
 	1    8500 2650
 	1    0    0    -1  
@@ -466,26 +453,26 @@ Text Label 7800 2250 0    50   ~ 0
 PBOE
 Wire Wire Line
 	8100 2250 7800 2250
-Text Label 7800 4500 0    50   ~ 0
+Text Label 7800 4900 0    50   ~ 0
 PC0
 Wire Wire Line
-	8100 4500 7800 4500
-Text Label 7800 4600 0    50   ~ 0
+	8100 4900 7800 4900
+Text Label 7800 4800 0    50   ~ 0
 PC1
 Wire Wire Line
-	8100 4600 7800 4600
+	8100 4800 7800 4800
 Text Label 7800 4700 0    50   ~ 0
 PC2
 Wire Wire Line
 	8100 4700 7800 4700
-Text Label 7800 4800 0    50   ~ 0
+Text Label 7800 4600 0    50   ~ 0
 PC3
 Wire Wire Line
-	8100 4800 7800 4800
-Text Label 7800 4900 0    50   ~ 0
+	8100 4600 7800 4600
+Text Label 7800 4500 0    50   ~ 0
 PC4
 Wire Wire Line
-	8100 4900 7800 4900
+	8100 4500 7800 4500
 Text Label 7800 4400 0    50   ~ 0
 PCOE
 Wire Wire Line
@@ -646,25 +633,25 @@ Wire Wire Line
 	8500 3450 8500 3350
 Text HLabel 3100 2400 0    50   BiDi ~ 0
 PAOE
-Text HLabel 3100 2500 0    50   BiDi ~ 0
-PA0
-Text HLabel 3100 2600 0    50   BiDi ~ 0
-PA1
-Text HLabel 3100 2700 0    50   BiDi ~ 0
-PA2
-Text HLabel 3100 2800 0    50   BiDi ~ 0
-PA3
-Text HLabel 3100 2900 0    50   BiDi ~ 0
-PA4
-Text HLabel 3100 3000 0    50   BiDi ~ 0
-PA5
-Text HLabel 3100 3100 0    50   BiDi ~ 0
-PA6
-Text HLabel 3100 3200 0    50   BiDi ~ 0
-PA7
-Text HLabel 3100 4550 0    50   BiDi ~ 0
-PA8
 Text HLabel 3100 4750 0    50   BiDi ~ 0
+PA0
+Text HLabel 3100 4550 0    50   BiDi ~ 0
+PA1
+Text HLabel 3100 3200 0    50   BiDi ~ 0
+PA2
+Text HLabel 3100 3100 0    50   BiDi ~ 0
+PA3
+Text HLabel 3100 3000 0    50   BiDi ~ 0
+PA4
+Text HLabel 3100 2900 0    50   BiDi ~ 0
+PA5
+Text HLabel 3100 2800 0    50   BiDi ~ 0
+PA6
+Text HLabel 3100 2700 0    50   BiDi ~ 0
+PA7
+Text HLabel 3100 2600 0    50   BiDi ~ 0
+PA8
+Text HLabel 3100 2500 0    50   BiDi ~ 0
 PA9
 Text HLabel 7800 2250 0    50   BiDi ~ 0
 PBOE
@@ -680,14 +667,27 @@ Text HLabel 7800 2750 0    50   BiDi ~ 0
 PB4
 Text HLabel 7800 4400 0    50   BiDi ~ 0
 PCOE
-Text HLabel 7800 4500 0    50   BiDi ~ 0
+Text HLabel 7800 4900 0    50   BiDi ~ 0
 PC0
-Text HLabel 7800 4600 0    50   BiDi ~ 0
+Text HLabel 7800 4800 0    50   BiDi ~ 0
 PC1
 Text HLabel 7800 4700 0    50   BiDi ~ 0
 PC2
-Text HLabel 7800 4800 0    50   BiDi ~ 0
+Text HLabel 7800 4600 0    50   BiDi ~ 0
 PC3
-Text HLabel 7800 4900 0    50   BiDi ~ 0
+Text HLabel 7800 4500 0    50   BiDi ~ 0
 PC4
+$Comp
+L Connector_Generic:Conn_02x10_Odd_Even J?
+U 1 1 5E95553C
+P 5300 3800
+AR Path="/5DFC2583/5E95553C" Ref="J?"  Part="1" 
+AR Path="/5E933CA7/5E95553C" Ref="J4"  Part="1" 
+F 0 "J4" H 5350 4417 50  0000 C CNN
+F 1 "Conn_02x10_Odd_Even" H 5350 4326 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x10_P1.27mm_Vertical_SMD" H 5300 3800 50  0001 C CNN
+F 3 "~" H 5300 3800 50  0001 C CNN
+	1    5300 3800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

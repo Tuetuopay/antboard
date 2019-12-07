@@ -194,7 +194,7 @@ U 1 1 5DFA8C19
 P 1800 3900
 F 0 "Y1" H 1800 4168 50  0000 C CNN
 F 1 "8M" H 1800 4077 50  0000 C CNN
-F 2 "Crystal:Crystal_HC18-U_Vertical" H 1800 3900 50  0001 C CNN
+F 2 "Crystal:Crystal_HC49-4H_Vertical" H 1800 3900 50  0001 C CNN
 F 3 "~" H 1800 3900 50  0001 C CNN
 	1    1800 3900
 	1    0    0    -1  
@@ -332,7 +332,7 @@ U 1 1 5DFA8C64
 P 10000 3400
 F 0 "J1" H 9570 3339 50  0000 R CNN
 F 1 "USB_C_Receptacle_USB2.0" H 9570 3248 50  0000 R CNN
-F 2 "Connector_USB:USB_C_Receptacle_Palconn_UTC16-G" H 10150 3400 50  0001 C CNN
+F 2 "antboard:USB_C_Receptacle_Palconn_UTC16-G" H 10150 3400 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 10150 3400 50  0001 C CNN
 	1    10000 3400
 	-1   0    0    -1  

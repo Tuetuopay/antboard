@@ -32,7 +32,7 @@ AR Path="/5DF7E971/5DFC7A1F" Ref="Y?"  Part="1"
 AR Path="/5DFC2583/5DFC7A1F" Ref="Y2"  Part="1" 
 F 0 "Y2" H 3800 4218 50  0000 C CNN
 F 1 "8M" H 3800 4127 50  0000 C CNN
-F 2 "Crystal:Crystal_HC18-U_Vertical" H 3800 3950 50  0001 C CNN
+F 2 "Crystal:Crystal_HC49-4H_Vertical" H 3800 3950 50  0001 C CNN
 F 3 "~" H 3800 3950 50  0001 C CNN
 	1    3800 3950
 	1    0    0    -1  
@@ -725,15 +725,15 @@ U 1 1 5DECBA68
 P 9300 3550
 F 0 "J6" H 8870 3489 50  0000 R CNN
 F 1 "USB_C_Receptacle_USB2.0" H 8870 3398 50  0000 R CNN
-F 2 "Connector_USB:USB_C_Receptacle_Palconn_UTC16-G" H 9450 3550 50  0001 C CNN
+F 2 "antboard:USB_C_Receptacle_Palconn_UTC16-G" H 9450 3550 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 9450 3550 50  0001 C CNN
 	1    9300 3550
 	-1   0    0    -1  
 $EndComp
 Text Label 6800 3550 2    50   ~ 0
-USB_DN
+USB_N
 Text Label 6800 3650 2    50   ~ 0
-USB_DP
+USB_P
 Wire Wire Line
 	6400 3550 8600 3550
 Wire Wire Line
@@ -1013,26 +1013,26 @@ Entry Wire Line
 	8300 5350 8400 5250
 Entry Wire Line
 	8300 5250 8400 5150
-Text Label 8400 5550 0    50   ~ 0
-SW4
-Wire Wire Line
-	8800 5550 8400 5550
 Text Label 8400 5450 0    50   ~ 0
-SW3
+SW4
 Wire Wire Line
 	8800 5450 8400 5450
 Text Label 8400 5350 0    50   ~ 0
-SW2
+SW3
 Wire Wire Line
 	8800 5350 8400 5350
-Text Label 8400 5250 0    50   ~ 0
-SW1
-Wire Wire Line
-	8800 5250 8400 5250
 Text Label 8400 5150 0    50   ~ 0
-SW0
+SW2
 Wire Wire Line
 	8800 5150 8400 5150
+Text Label 8400 5550 0    50   ~ 0
+SW1
+Wire Wire Line
+	8800 5550 8400 5550
+Text Label 8400 5250 0    50   ~ 0
+SW0
+Wire Wire Line
+	8800 5250 8400 5250
 Wire Wire Line
 	10000 5350 10000 5450
 Wire Wire Line
