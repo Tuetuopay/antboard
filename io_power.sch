@@ -21,7 +21,7 @@ AR Path="/5DFC2583/5EAA2C37" Ref="U?"  Part="1"
 AR Path="/5EA8F1AB/5EAA2C37" Ref="U6"  Part="1" 
 F 0 "U6" H 8000 1265 50  0000 C CNN
 F 1 "TPS7A7100" H 8000 1174 50  0000 C CNN
-F 2 "Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm_ThermalVias" H 7650 1100 50  0001 C CNN
+F 2 "antboard:VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm_ThermalVias" H 7650 1100 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/tps7a7100.pdf" H 7650 1100 50  0001 C CNN
 	1    7650 1100
 	1    0    0    -1  
@@ -104,7 +104,7 @@ AR Path="/5DFC2583/5EAA2C83" Ref="U?"  Part="1"
 AR Path="/5EA8F1AB/5EAA2C83" Ref="U11"  Part="1" 
 F 0 "U11" H 8000 3015 50  0000 C CNN
 F 1 "TPS7A7100" H 8000 2924 50  0000 C CNN
-F 2 "Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm_ThermalVias" H 7650 2850 50  0001 C CNN
+F 2 "antboard:VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm_ThermalVias" H 7650 2850 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/tps7a7100.pdf" H 7650 2850 50  0001 C CNN
 	1    7650 2850
 	1    0    0    -1  
@@ -215,7 +215,7 @@ AR Path="/5DFC2583/5EAA2CDD" Ref="U?"  Part="1"
 AR Path="/5EA8F1AB/5EAA2CDD" Ref="U12"  Part="1" 
 F 0 "U12" H 8000 4765 50  0000 C CNN
 F 1 "TPS7A7100" H 8000 4674 50  0000 C CNN
-F 2 "Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm_ThermalVias" H 7650 4600 50  0001 C CNN
+F 2 "antboard:VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm_ThermalVias" H 7650 4600 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/tps7a7100.pdf" H 7650 4600 50  0001 C CNN
 	1    7650 4600
 	1    0    0    -1  
@@ -1086,4 +1086,62 @@ Wire Wire Line
 NoConn ~ 4500 4550
 NoConn ~ 4500 4650
 NoConn ~ 4500 4750
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J7
+U 1 1 5E0E1804
+P 10250 3650
+F 0 "J7" H 10300 3967 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 10300 3876 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 10250 3650 50  0001 C CNN
+F 3 "~" H 10250 3650 50  0001 C CNN
+	1    10250 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E0E2934
+P 10650 3850
+AR Path="/5E0E2934" Ref="#PWR?"  Part="1" 
+AR Path="/5DF7E971/5E0E2934" Ref="#PWR?"  Part="1" 
+AR Path="/5DFC2583/5E0E2934" Ref="#PWR?"  Part="1" 
+AR Path="/5EA8F1AB/5E0E2934" Ref="#PWR047"  Part="1" 
+F 0 "#PWR047" H 10650 3600 50  0001 C CNN
+F 1 "GND" H 10655 3677 50  0000 C CNN
+F 2 "" H 10650 3850 50  0001 C CNN
+F 3 "" H 10650 3850 50  0001 C CNN
+	1    10650 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10550 3550 10650 3550
+Wire Wire Line
+	10650 3550 10650 3650
+Wire Wire Line
+	10550 3650 10650 3650
+Connection ~ 10650 3650
+Wire Wire Line
+	10650 3650 10650 3750
+Wire Wire Line
+	10550 3750 10650 3750
+Connection ~ 10650 3750
+Wire Wire Line
+	10650 3750 10650 3850
+Wire Wire Line
+	10050 3550 9850 3550
+Wire Wire Line
+	9850 3550 9850 1200
+Wire Wire Line
+	9850 1200 9300 1200
+Wire Wire Line
+	9300 2950 9750 2950
+Wire Wire Line
+	9750 2950 9750 3650
+Wire Wire Line
+	9750 3650 10050 3650
+Wire Wire Line
+	9300 4700 9850 4700
+Wire Wire Line
+	9850 4700 9850 3750
+Wire Wire Line
+	9850 3750 10050 3750
 $EndSCHEMATC
