@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 23)
+    (drawings 24)
     (tracks 1479)
     (zones 0)
     (modules 103)
@@ -6497,6 +6497,9 @@
     )
   )
 
+  (gr_text "Rev 1.0" (at 166.1 112.6) (layer F.SilkS)
+    (effects (font (size 0.82 0.82) (thickness 0.15)))
+  )
   (gr_text VCC (at 170.8 115) (layer F.SilkS)
     (effects (font (size 0.82 0.82) (thickness 0.15)))
   )
