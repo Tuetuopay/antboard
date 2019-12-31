@@ -8,33 +8,33 @@ pipeline:
       - mkdir -p revs/heads
 
   bom:
-    image: kicad-automation:4layers
+    image: kicad-automation:2layers
     group: fabrication-outputs
     commands:
       - python -m kicad-automation.eeschema.export_bom --schematic antboard.sch --output_dir out/bom export
 
   ibom:
-    image: kicad-automation:4layers
+    image: kicad-automation:2layers
     group: fabrication-outputs
     commands:
       - sh /opt/InteractiveHtmlBom/make-interactive-bom antboard.kicad_pcb
       - mv /output/bom/interactive/ibom.html out/bom/interactive/
 
   schematic:
-    image: kicad-automation:4layers
+    image: kicad-automation:2layers
     group: fabrication-outputs
     commands:
       - python -m kicad-automation.eeschema.schematic --schematic antboard.sch --output_dir out/schematic/pdf export --all_pages -f pdf
       - python -m kicad-automation.eeschema.schematic --schematic antboard.sch --output_dir out/schematic/svg export --all_pages -f svg
 
   gerbers:
-    image: kicad-automation:4layers
+    image: kicad-automation:2layers
     group: fabrication-outputs
     commands:
       - kiplot -b antboard.kicad_pcb -c /opt/etc/kiplot/generic_plot.kiplot.yaml -v -d out
 
   pos:
-    image: kicad-automation:4layers
+    image: kicad-automation:2layers
     group: fabrication-outputs
     commands:
       - scripts/generate-pos-file antboard.kicad_pcb > out/layout/antboard.pos
