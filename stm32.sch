@@ -718,7 +718,6 @@ Text HLabel 1350 1800 0    50   Output ~ 0
 SCL
 NoConn ~ 5000 2850
 NoConn ~ 5000 2950
-NoConn ~ 6400 3950
 $Comp
 L Connector:USB_C_Receptacle_USB2.0 J6
 U 1 1 5DECBA68
@@ -1281,6 +1280,16 @@ Wire Wire Line
 Wire Wire Line
 	1850 5400 1850 5500
 NoConn ~ 5000 3950
+Wire Wire Line
+	1350 1900 1900 1900
+Text Label 1900 1900 2    50   ~ 0
+ADC_RDY
+Text HLabel 1350 1900 0    50   Input ~ 0
+DRDY
+Wire Wire Line
+	6400 3950 6800 3950
+Text Label 6800 3950 2    50   ~ 0
+ADC_RDY
 Wire Bus Line
 	4400 4250 4400 6450
 Wire Bus Line

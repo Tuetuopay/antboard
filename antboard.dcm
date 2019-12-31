@@ -31,6 +31,10 @@ D Power symbol creates a global label with name "PCVCC"
 K power-flag
 $ENDCMP
 #
+$CMP TCA6424A
+F https://www.ti.com/lit/ds/symlink/tca6424a.pdf
+$ENDCMP
+#
 $CMP TPS7A7100
 D 1-A, Fast-Transient,Low-Dropout Programmable Voltage Regulator
 F https://www.ti.com/lit/ds/symlink/tps7a7100.pdf
