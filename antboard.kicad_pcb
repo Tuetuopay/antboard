@@ -62,8 +62,8 @@
     (mod_text_width 0.15)
     (pad_size 1.524 1.524)
     (pad_drill 0.762)
-    (pad_to_mask_clearance 0.051)
-    (solder_mask_min_width 0.25)
+    (pad_to_mask_clearance 0.05)
+    (solder_mask_min_width 0.1)
     (aux_axis_origin 0 0)
     (visible_elements 7FFFFFFF)
     (pcbplotparams
@@ -2869,7 +2869,7 @@
     (pad 1 thru_hole circle (at 0 0) (size 6 6) (drill 3) (layers *.Cu *.Mask))
   )
 
-  (module antboard:USB_C_Receptacle_Palconn_UTC16-G (layer F.Cu) (tedit 5DEB0EBC) (tstamp 5DECDBD8)
+  (module antboard:USB_C_Receptacle_Palconn_UTC16-G (layer F.Cu) (tedit 5E0B84C0) (tstamp 5DECDBD8)
     (at 156.7 75.3 180)
     (descr http://www.palpilot.com/wp-content/uploads/2017/05/UTC027-GKN-OR-Rev-A.pdf)
     (tags "USB C Type-C Receptacle USB2.0")
@@ -2943,14 +2943,14 @@
       (net 1 GND))
     (pad S1 thru_hole oval (at -4.32 -1.93 270) (size 2 0.9) (drill oval 1.7 0.6) (layers *.Cu *.Mask)
       (net 1 GND))
-    (model ${KIPRJMOD}/3d/USB_C_Receptacle_Palconn_UTC16-G.step
+    (model ${KIPRJMOD}/3d/USB_C_Receptacle_Palconn_UTC16-G-fusion.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
   )
 
-  (module antboard:USB_C_Receptacle_Palconn_UTC16-G (layer F.Cu) (tedit 5DEB0EBC) (tstamp 5DEC2934)
+  (module antboard:USB_C_Receptacle_Palconn_UTC16-G (layer F.Cu) (tedit 5E0B84C0) (tstamp 5DEC2934)
     (at 124.1 75.3 180)
     (descr http://www.palpilot.com/wp-content/uploads/2017/05/UTC027-GKN-OR-Rev-A.pdf)
     (tags "USB C Type-C Receptacle USB2.0")
@@ -3024,7 +3024,7 @@
       (net 1 GND))
     (pad S1 thru_hole oval (at -4.32 -1.93 270) (size 2 0.9) (drill oval 1.7 0.6) (layers *.Cu *.Mask)
       (net 1 GND))
-    (model ${KIPRJMOD}/3d/USB_C_Receptacle_Palconn_UTC16-G.step
+    (model ${KIPRJMOD}/3d/USB_C_Receptacle_Palconn_UTC16-G-fusion.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
