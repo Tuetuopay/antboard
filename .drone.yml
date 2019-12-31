@@ -49,7 +49,7 @@ pipeline:
     image: alpine
     group: revs
     commands:
-      - cp -r out revs/heads/${DRONE_BRANCH}
+      - '[[ ${DRONE_TAG} == "" ]] && cp -r out revs/heads/${DRONE_BRANCH} || true'
       - '[[ "${DRONE_BRANCH}" == "master" ]] && cp -r out revs/latest || true'
       - 'if [[ "${DRONE_TAG}" != "" ]]; then mkdir -p revs/tags; cp -r out revs/tags/${DRONE_TAG}; fi'
 
