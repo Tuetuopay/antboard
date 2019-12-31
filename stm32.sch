@@ -882,13 +882,13 @@ Wire Wire Line
 	5000 4950 4600 4950
 Text Label 4600 4950 0    50   ~ 0
 LED_B
-Text Label 4600 4150 0    50   ~ 0
+Text Label 4600 3950 0    50   ~ 0
 LED_A0
-Text Label 4600 4250 0    50   ~ 0
+Text Label 4600 4150 0    50   ~ 0
 LED_A1
-Text Label 4600 4350 0    50   ~ 0
+Text Label 4600 4250 0    50   ~ 0
 LED_A2
-Text Label 4600 4450 0    50   ~ 0
+Text Label 4600 4350 0    50   ~ 0
 LED_A3
 Connection ~ 2700 7550
 Connection ~ 1950 7550
@@ -1019,13 +1019,13 @@ Wire Wire Line
 Wire Wire Line
 	2700 7550 3450 7550
 Wire Wire Line
-	3650 7350 3050 7350
+	5150 7350 3800 7350
 Connection ~ 3050 7350
 Wire Wire Line
-	3250 7450 3650 7450
+	3250 7450 4000 7450
 Connection ~ 3250 7450
 Wire Wire Line
-	3650 7550 3450 7550
+	5150 7550 4200 7550
 Connection ~ 3450 7550
 Entry Wire Line
 	1000 6550 1100 6450
@@ -1038,13 +1038,13 @@ Entry Wire Line
 Entry Wire Line
 	4400 4550 4500 4450
 Wire Wire Line
+	4500 3950 5000 3950
+Wire Wire Line
 	4500 4150 5000 4150
 Wire Wire Line
 	4500 4250 5000 4250
 Wire Wire Line
 	4500 4350 5000 4350
-Wire Wire Line
-	4500 4450 5000 4450
 Wire Wire Line
 	5000 5150 4600 5150
 Text Label 4600 5150 0    50   ~ 0
@@ -1062,54 +1062,54 @@ SCR_D~C
 Text Label 4600 4650 0    50   ~ 0
 SCK_~CS
 Wire Wire Line
-	3850 7350 4250 7350
-Text Label 4250 7350 2    50   ~ 0
+	5350 7350 5750 7350
+Text Label 5750 7350 2    50   ~ 0
 LED_R
 Wire Wire Line
-	3850 7450 4250 7450
-Text Label 4250 7450 2    50   ~ 0
+	5350 7450 5750 7450
+Text Label 5750 7450 2    50   ~ 0
 LED_G
 Wire Wire Line
-	3850 7550 4250 7550
-Text Label 4250 7550 2    50   ~ 0
+	5350 7550 5750 7550
+Text Label 5750 7550 2    50   ~ 0
 LED_B
 $Comp
 L Device:R_Small R?
 U 1 1 5E2945B4
-P 3750 7350
+P 5250 7350
 AR Path="/5DF7E971/5E2945B4" Ref="R?"  Part="1" 
 AR Path="/5DFC2583/5E2945B4" Ref="R14"  Part="1" 
-F 0 "R14" V 3700 7250 50  0000 R CNN
-F 1 "1k" V 3700 7450 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 3750 7350 50  0001 C CNN
-F 3 "~" H 3750 7350 50  0001 C CNN
-	1    3750 7350
+F 0 "R14" V 5200 7250 50  0000 R CNN
+F 1 "1k" V 5200 7450 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5250 7350 50  0001 C CNN
+F 3 "~" H 5250 7350 50  0001 C CNN
+	1    5250 7350
 	0    -1   1    0   
 $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 5E295ACD
-P 3750 7450
+P 5250 7450
 AR Path="/5DF7E971/5E295ACD" Ref="R?"  Part="1" 
 AR Path="/5DFC2583/5E295ACD" Ref="R15"  Part="1" 
-F 0 "R15" V 3700 7350 50  0000 R CNN
-F 1 "1k" V 3700 7550 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 3750 7450 50  0001 C CNN
-F 3 "~" H 3750 7450 50  0001 C CNN
-	1    3750 7450
+F 0 "R15" V 5200 7350 50  0000 R CNN
+F 1 "1k" V 5200 7550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5250 7450 50  0001 C CNN
+F 3 "~" H 5250 7450 50  0001 C CNN
+	1    5250 7450
 	0    -1   1    0   
 $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 5E295D66
-P 3750 7550
+P 5250 7550
 AR Path="/5DF7E971/5E295D66" Ref="R?"  Part="1" 
 AR Path="/5DFC2583/5E295D66" Ref="R16"  Part="1" 
-F 0 "R16" V 3700 7450 50  0000 R CNN
-F 1 "1k" V 3700 7650 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 3750 7550 50  0001 C CNN
-F 3 "~" H 3750 7550 50  0001 C CNN
-	1    3750 7550
+F 0 "R16" V 5200 7450 50  0000 R CNN
+F 1 "1k" V 5200 7650 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5250 7550 50  0001 C CNN
+F 3 "~" H 5250 7550 50  0001 C CNN
+	1    5250 7550
 	0    -1   1    0   
 $EndComp
 $Comp
@@ -1235,7 +1235,6 @@ Wire Wire Line
 	1850 4500 1850 4600
 Wire Wire Line
 	1850 5400 1850 5500
-NoConn ~ 5000 3950
 Wire Wire Line
 	1350 1900 1900 1900
 Text Label 1900 1900 2    50   ~ 0
@@ -1246,14 +1245,6 @@ Wire Wire Line
 	6400 3950 6800 3950
 Text Label 6800 3950 2    50   ~ 0
 ADC_RDY
-Wire Bus Line
-	4400 4250 4400 6450
-Wire Bus Line
-	1100 6450 4400 6450
-Wire Bus Line
-	4500 5150 4500 6450
-Wire Bus Line
-	8300 5250 8300 6450
 $Comp
 L Device:LED_RABG D3
 U 1 1 5E2C9CFE
@@ -1298,4 +1289,50 @@ F 3 "~" H 3250 7000 50  0001 C CNN
 	1    3250 7050
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	4000 7450 4000 7250
+Wire Wire Line
+	3800 7350 3800 7250
+Entry Wire Line
+	4000 6550 4100 6450
+Text Label 4000 6550 3    50   ~ 0
+LED_A4
+Wire Wire Line
+	4000 6850 4000 6550
+Wire Wire Line
+	4200 7250 4200 7550
+$Comp
+L Device:LED_RABG D7
+U 1 1 5E30E6A1
+P 4000 7050
+F 0 "D7" V 4150 6850 50  0000 R CNN
+F 1 "MHPA1515RGBDT" V 3955 6720 50  0001 R CNN
+F 2 "antboard:PLCC1515" H 4000 7000 50  0001 C CNN
+F 3 "~" H 4000 7000 50  0001 C CNN
+	1    4000 7050
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3800 7350
+Wire Wire Line
+	3800 7350 3050 7350
+Connection ~ 4000 7450
+Wire Wire Line
+	4000 7450 5150 7450
+Connection ~ 4200 7550
+Wire Wire Line
+	4200 7550 3450 7550
+Text Label 4600 4450 0    50   ~ 0
+LED_A4
+Wire Wire Line
+	4500 4450 5000 4450
+Entry Wire Line
+	4400 4050 4500 3950
+Wire Bus Line
+	4400 4050 4400 6450
+Wire Bus Line
+	1100 6450 4400 6450
+Wire Bus Line
+	4500 5150 4500 6450
+Wire Bus Line
+	8300 5250 8300 6450
 $EndSCHEMATC
