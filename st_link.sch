@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:antboard-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 5
+Sheet 2 6
 Title "STM32 devboard with .05\" headers"
 Date ""
 Rev "v1.0"
@@ -326,17 +327,6 @@ Wire Wire Line
 	3000 4300 2450 4300
 Text Label 2450 4300 0    50   ~ 0
 SWRST
-$Comp
-L Connector:USB_C_Receptacle_USB2.0 J1
-U 1 1 5DFA8C64
-P 10000 3400
-F 0 "J1" H 9570 3339 50  0000 R CNN
-F 1 "USB_C_Receptacle_USB2.0" H 9570 3248 50  0000 R CNN
-F 2 "antboard:USB_C_Receptacle_Palconn_UTC16-G" H 10150 3400 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 10150 3400 50  0001 C CNN
-	1    10000 3400
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	4300 5400 4850 5400
 Text Label 4850 5400 2    50   ~ 0
@@ -345,26 +335,8 @@ Wire Wire Line
 	4300 5500 4850 5500
 Text Label 4850 5500 2    50   ~ 0
 USB_P
-Wire Wire Line
-	9400 3400 9350 3400
-Text Label 8250 3400 0    50   ~ 0
-USB_N
-Wire Wire Line
-	9400 3500 9350 3500
-Text Label 8250 3500 0    50   ~ 0
+Text Label 7050 4650 0    50   ~ 0
 USB_P
-Wire Wire Line
-	9400 3300 9350 3300
-Wire Wire Line
-	9350 3300 9350 3400
-Connection ~ 9350 3400
-Wire Wire Line
-	9350 3500 9350 3600
-Wire Wire Line
-	9350 3600 9400 3600
-Connection ~ 9350 3500
-NoConn ~ 9400 3900
-NoConn ~ 9400 4000
 Wire Wire Line
 	4300 5600 4850 5600
 Text Label 4850 5600 2    50   ~ 0
@@ -452,14 +424,14 @@ $EndComp
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5DFA8CA2
-P 8550 2400
+P 7950 3550
 AR Path="/5DFA8CA2" Ref="#PWR?"  Part="1" 
 AR Path="/5DF7E971/5DFA8CA2" Ref="#PWR0109"  Part="1" 
-F 0 "#PWR0109" H 8550 2250 50  0001 C CNN
-F 1 "+3V3" H 8565 2573 50  0000 C CNN
-F 2 "" H 8550 2400 50  0001 C CNN
-F 3 "" H 8550 2400 50  0001 C CNN
-	1    8550 2400
+F 0 "#PWR0109" H 7950 3400 50  0001 C CNN
+F 1 "+3V3" H 7965 3723 50  0000 C CNN
+F 2 "" H 7950 3550 50  0001 C CNN
+F 3 "" H 7950 3550 50  0001 C CNN
+	1    7950 3550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -492,118 +464,42 @@ NoConn ~ 3000 5300
 NoConn ~ 3000 5400
 NoConn ~ 3000 5800
 $Comp
-L Device:R_Small R?
-U 1 1 5DFA8CBF
-P 9200 3000
-AR Path="/5DFA8CBF" Ref="R?"  Part="1" 
-AR Path="/5DF7E971/5DFA8CBF" Ref="R3"  Part="1" 
-F 0 "R3" V 9100 2950 50  0000 R CNN
-F 1 "5k1" V 9100 3000 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 9200 3000 50  0001 C CNN
-F 3 "~" H 9200 3000 50  0001 C CNN
-	1    9200 3000
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 5DFA8CC5
-P 9200 3100
-AR Path="/5DFA8CC5" Ref="R?"  Part="1" 
-AR Path="/5DF7E971/5DFA8CC5" Ref="R4"  Part="1" 
-F 0 "R4" V 9100 3050 50  0000 R CNN
-F 1 "5k1" V 9100 3100 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 9200 3100 50  0001 C CNN
-F 3 "~" H 9200 3100 50  0001 C CNN
-	1    9200 3100
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	9300 3000 9400 3000
-Wire Wire Line
-	9300 3100 9400 3100
-Wire Wire Line
-	9100 3000 9000 3000
-Wire Wire Line
-	9000 3000 9000 3100
-$Comp
-L power:GND #PWR?
-U 1 1 5DFA8CCF
-P 9000 3150
-AR Path="/5DFA8CCF" Ref="#PWR?"  Part="1" 
-AR Path="/5DF7E971/5DFA8CCF" Ref="#PWR0110"  Part="1" 
-F 0 "#PWR0110" H 9000 2900 50  0001 C CNN
-F 1 "GND" H 9005 2977 50  0000 C CNN
-F 2 "" H 9000 3150 50  0001 C CNN
-F 3 "" H 9000 3150 50  0001 C CNN
-	1    9000 3150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9000 3100 9100 3100
-Connection ~ 9000 3100
-Wire Wire Line
-	9000 3100 9000 3150
-$Comp
-L power:GND #PWR?
-U 1 1 5DFA8CD8
-P 10150 4400
-AR Path="/5DFA8CD8" Ref="#PWR?"  Part="1" 
-AR Path="/5DF7E971/5DFA8CD8" Ref="#PWR0111"  Part="1" 
-F 0 "#PWR0111" H 10150 4150 50  0001 C CNN
-F 1 "GND" H 10155 4227 50  0000 C CNN
-F 2 "" H 10150 4400 50  0001 C CNN
-F 3 "" H 10150 4400 50  0001 C CNN
-	1    10150 4400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10000 4300 10000 4350
-Wire Wire Line
-	10000 4350 10150 4350
-Wire Wire Line
-	10300 4350 10300 4300
-Wire Wire Line
-	10150 4400 10150 4350
-Connection ~ 10150 4350
-Wire Wire Line
-	10150 4350 10300 4350
-$Comp
 L antboard:AO3402 Q?
 U 1 1 5DFA8CE4
-P 8450 2800
+P 7850 3950
 AR Path="/5DFA8CE4" Ref="Q?"  Part="1" 
 AR Path="/5DF7E971/5DFA8CE4" Ref="Q1"  Part="1" 
-F 0 "Q1" H 8656 2846 50  0000 L CNN
-F 1 "AO3402" H 8656 2755 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 8650 2725 50  0001 L CIN
-F 3 "http://www.aosmd.com/pdfs/datasheet/AO3402.pdf" H 8450 2800 50  0001 L CNN
-	1    8450 2800
+F 0 "Q1" H 8056 3996 50  0000 L CNN
+F 1 "AO3402" H 8056 3905 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8050 3875 50  0001 L CIN
+F 3 "http://www.aosmd.com/pdfs/datasheet/AO3402.pdf" H 7850 3950 50  0001 L CNN
+	1    7850 3950
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 5DFA8CEA
-P 8550 3200
+P 7950 4350
 AR Path="/5DFA8CEA" Ref="R?"  Part="1" 
 AR Path="/5DF7E971/5DFA8CEA" Ref="R5"  Part="1" 
-F 0 "R5" H 8491 3246 50  0000 R CNN
-F 1 "1k5" H 8491 3155 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 8550 3200 50  0001 C CNN
-F 3 "~" H 8550 3200 50  0001 C CNN
-	1    8550 3200
+F 0 "R5" H 7891 4396 50  0000 R CNN
+F 1 "1k5" H 7891 4305 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7950 4350 50  0001 C CNN
+F 3 "~" H 7950 4350 50  0001 C CNN
+	1    7950 4350
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 5DFA8CF0
-P 8350 2500
+P 7750 3650
 AR Path="/5DFA8CF0" Ref="R?"  Part="1" 
 AR Path="/5DF7E971/5DFA8CF0" Ref="R1"  Part="1" 
-F 0 "R1" V 8546 2500 50  0000 C CNN
-F 1 "10k" V 8455 2500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 8350 2500 50  0001 C CNN
-F 3 "~" H 8350 2500 50  0001 C CNN
-	1    8350 2500
+F 0 "R1" V 7946 3650 50  0000 C CNN
+F 1 "10k" V 7855 3650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7750 3650 50  0001 C CNN
+F 3 "~" H 7750 3650 50  0001 C CNN
+	1    7750 3650
 	0    1    -1   0   
 $EndComp
 $Comp
@@ -620,51 +516,29 @@ F 3 "" H 5050 4650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8450 2500 8550 2500
+	7850 3650 7950 3650
 Wire Wire Line
-	8550 2500 8550 2600
+	7950 3650 7950 3750
 Wire Wire Line
-	8550 2500 8550 2400
-Connection ~ 8550 2500
+	7950 3650 7950 3550
+Connection ~ 7950 3650
 Wire Wire Line
-	8250 2500 8150 2500
+	7650 3650 7550 3650
 Wire Wire Line
-	8150 2500 8150 2800
+	7550 3650 7550 3950
 Wire Wire Line
-	8150 2800 8250 2800
+	7550 3950 7650 3950
 Wire Wire Line
-	8150 2800 7650 2800
-Connection ~ 8150 2800
+	7550 3950 7050 3950
+Connection ~ 7550 3950
 Wire Wire Line
-	8550 3000 8550 3100
+	7950 4150 7950 4250
 Wire Wire Line
-	8250 3400 9350 3400
+	7950 4450 7950 4650
 Wire Wire Line
-	8550 3300 8550 3500
-Wire Wire Line
-	8250 3500 8550 3500
-Connection ~ 8550 3500
-Wire Wire Line
-	8550 3500 9350 3500
-Text Label 7650 2800 0    50   ~ 0
+	7050 4650 7950 4650
+Text Label 7050 3950 0    50   ~ 0
 ~USB_RENUM
-$Comp
-L power:+5V #PWR?
-U 1 1 5DFA8D0C
-P 9300 2700
-AR Path="/5DFA8D0C" Ref="#PWR?"  Part="1" 
-AR Path="/5DF7E971/5DFA8D0C" Ref="#PWR0113"  Part="1" 
-F 0 "#PWR0113" H 9300 2550 50  0001 C CNN
-F 1 "+5V" H 9315 2873 50  0000 C CNN
-F 2 "" H 9300 2700 50  0001 C CNN
-F 3 "" H 9300 2700 50  0001 C CNN
-	1    9300 2700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9300 2700 9300 2800
-Wire Wire Line
-	9300 2800 9400 2800
 $Comp
 L Device:C_Small C?
 U 1 1 5DFA8D14
@@ -1050,4 +924,16 @@ Text HLabel 1400 1650 0    50   Output ~ 0
 TXD
 Text HLabel 1400 1750 0    50   Input ~ 0
 RXD
+Wire Wire Line
+	1400 1950 1950 1950
+Text Label 1950 1950 2    50   ~ 0
+USB_N
+Wire Wire Line
+	1400 2050 1950 2050
+Text Label 1950 2050 2    50   ~ 0
+USB_P
+Text HLabel 1400 1950 0    50   BiDi ~ 0
+USB_N
+Text HLabel 1400 2050 0    50   BiDi ~ 0
+USB_P
 $EndSCHEMATC

@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:antboard-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 5
+Sheet 3 6
 Title ""
 Date ""
 Rev ""
@@ -24,93 +25,6 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 	1    5700 4050
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:Crystal Y?
-U 1 1 5DFC7A1F
-P 3800 3950
-AR Path="/5DF7E971/5DFC7A1F" Ref="Y?"  Part="1" 
-AR Path="/5DFC2583/5DFC7A1F" Ref="Y2"  Part="1" 
-F 0 "Y2" H 3800 4218 50  0000 C CNN
-F 1 "8M" H 3800 4127 50  0000 C CNN
-F 2 "Crystal:Crystal_HC49-4H_Vertical" H 3800 3950 50  0001 C CNN
-F 3 "~" H 3800 3950 50  0001 C CNN
-	1    3800 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C?
-U 1 1 5DFC7A25
-P 3550 4150
-AR Path="/5DF7E971/5DFC7A25" Ref="C?"  Part="1" 
-AR Path="/5DFC2583/5DFC7A25" Ref="C19"  Part="1" 
-F 0 "C19" H 3458 4196 50  0000 R CNN
-F 1 "100n" H 3458 4105 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3550 4150 50  0001 C CNN
-F 3 "~" H 3550 4150 50  0001 C CNN
-	1    3550 4150
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C?
-U 1 1 5DFC7A2B
-P 4050 4150
-AR Path="/5DF7E971/5DFC7A2B" Ref="C?"  Part="1" 
-AR Path="/5DFC2583/5DFC7A2B" Ref="C20"  Part="1" 
-F 0 "C20" H 3958 4196 50  0000 R CNN
-F 1 "100n" H 3958 4105 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4050 4150 50  0001 C CNN
-F 3 "~" H 4050 4150 50  0001 C CNN
-	1    4050 4150
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	5000 3750 4050 3750
-Wire Wire Line
-	4050 3750 4050 3950
-Wire Wire Line
-	5000 3650 3550 3650
-Wire Wire Line
-	3550 3650 3550 3950
-Wire Wire Line
-	3550 3950 3650 3950
-Connection ~ 3550 3950
-Wire Wire Line
-	3550 3950 3550 4050
-Wire Wire Line
-	3950 3950 4050 3950
-Wire Wire Line
-	4050 3950 4050 4050
-Connection ~ 4050 3950
-$Comp
-L power:GND #PWR?
-U 1 1 5DFC7A3B
-P 4050 4350
-AR Path="/5DF7E971/5DFC7A3B" Ref="#PWR?"  Part="1" 
-AR Path="/5DFC2583/5DFC7A3B" Ref="#PWR0122"  Part="1" 
-F 0 "#PWR0122" H 4050 4100 50  0001 C CNN
-F 1 "GND" H 4055 4177 50  0000 C CNN
-F 2 "" H 4050 4350 50  0001 C CNN
-F 3 "" H 4050 4350 50  0001 C CNN
-	1    4050 4350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5DFC7A41
-P 3550 4350
-AR Path="/5DF7E971/5DFC7A41" Ref="#PWR?"  Part="1" 
-AR Path="/5DFC2583/5DFC7A41" Ref="#PWR0123"  Part="1" 
-F 0 "#PWR0123" H 3550 4100 50  0001 C CNN
-F 1 "GND" H 3555 4177 50  0000 C CNN
-F 2 "" H 3550 4350 50  0001 C CNN
-F 3 "" H 3550 4350 50  0001 C CNN
-	1    3550 4350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3550 4250 3550 4350
-Wire Wire Line
-	4050 4250 4050 4350
 $Comp
 L power:+3V3 #PWR0124
 U 1 1 5DFC7E60
@@ -718,128 +632,10 @@ Text HLabel 1350 1800 0    50   Output ~ 0
 SCL
 NoConn ~ 5000 2850
 NoConn ~ 5000 2950
-$Comp
-L Connector:USB_C_Receptacle_USB2.0 J6
-U 1 1 5DECBA68
-P 9300 3550
-F 0 "J6" H 8870 3489 50  0000 R CNN
-F 1 "USB_C_Receptacle_USB2.0" H 8870 3398 50  0000 R CNN
-F 2 "antboard:USB_C_Receptacle_Palconn_UTC16-G" H 9450 3550 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 9450 3550 50  0001 C CNN
-	1    9300 3550
-	-1   0    0    -1  
-$EndComp
 Text Label 6800 3550 2    50   ~ 0
 USB_N
 Text Label 6800 3650 2    50   ~ 0
 USB_P
-Wire Wire Line
-	6400 3550 8600 3550
-Wire Wire Line
-	6400 3650 8600 3650
-Wire Wire Line
-	8700 3450 8600 3450
-Wire Wire Line
-	8600 3450 8600 3550
-Connection ~ 8600 3550
-Wire Wire Line
-	8600 3550 8700 3550
-Wire Wire Line
-	8600 3650 8600 3750
-Wire Wire Line
-	8600 3750 8700 3750
-Connection ~ 8600 3650
-Wire Wire Line
-	8600 3650 8700 3650
-NoConn ~ 8700 4050
-NoConn ~ 8700 4150
-$Comp
-L Device:R_Small R?
-U 1 1 5DEF366C
-P 8500 3150
-AR Path="/5DF7E971/5DEF366C" Ref="R?"  Part="1" 
-AR Path="/5DFC2583/5DEF366C" Ref="R19"  Part="1" 
-F 0 "R19" V 8400 3100 50  0000 R CNN
-F 1 "5k1" V 8400 3150 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 8500 3150 50  0001 C CNN
-F 3 "~" H 8500 3150 50  0001 C CNN
-	1    8500 3150
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 5DEF4157
-P 8500 3250
-AR Path="/5DF7E971/5DEF4157" Ref="R?"  Part="1" 
-AR Path="/5DFC2583/5DEF4157" Ref="R20"  Part="1" 
-F 0 "R20" V 8400 3200 50  0000 R CNN
-F 1 "5k1" V 8400 3250 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 8500 3250 50  0001 C CNN
-F 3 "~" H 8500 3250 50  0001 C CNN
-	1    8500 3250
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	8600 3150 8700 3150
-Wire Wire Line
-	8700 3250 8600 3250
-Wire Wire Line
-	8400 3150 8300 3150
-Wire Wire Line
-	8300 3150 8300 3250
-Wire Wire Line
-	8300 3250 8400 3250
-$Comp
-L power:GND #PWR06
-U 1 1 5DF03FFD
-P 8300 3300
-F 0 "#PWR06" H 8300 3050 50  0001 C CNN
-F 1 "GND" H 8305 3127 50  0000 C CNN
-F 2 "" H 8300 3300 50  0001 C CNN
-F 3 "" H 8300 3300 50  0001 C CNN
-	1    8300 3300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8300 3300 8300 3250
-Connection ~ 8300 3250
-$Comp
-L power:GND #PWR08
-U 1 1 5DF08A10
-P 9450 4550
-F 0 "#PWR08" H 9450 4300 50  0001 C CNN
-F 1 "GND" H 9455 4377 50  0000 C CNN
-F 2 "" H 9450 4550 50  0001 C CNN
-F 3 "" H 9450 4550 50  0001 C CNN
-	1    9450 4550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9300 4450 9300 4500
-Wire Wire Line
-	9300 4500 9450 4500
-Wire Wire Line
-	9600 4500 9600 4450
-Wire Wire Line
-	9450 4550 9450 4500
-Connection ~ 9450 4500
-Wire Wire Line
-	9450 4500 9600 4500
-$Comp
-L power:+5V #PWR07
-U 1 1 5DF12003
-P 8600 2850
-F 0 "#PWR07" H 8600 2700 50  0001 C CNN
-F 1 "+5V" H 8615 3023 50  0000 C CNN
-F 2 "" H 8600 2850 50  0001 C CNN
-F 3 "" H 8600 2850 50  0001 C CNN
-	1    8600 2850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8600 2850 8600 2950
-Wire Wire Line
-	8600 2950 8700 2950
 Wire Wire Line
 	5000 5050 4600 5050
 Text Label 4600 5050 0    50   ~ 0
@@ -1327,6 +1123,109 @@ Wire Wire Line
 	4500 4450 5000 4450
 Entry Wire Line
 	4400 4050 4500 3950
+Wire Wire Line
+	5000 3650 3550 3650
+Wire Wire Line
+	5000 3750 4050 3750
+Wire Wire Line
+	4050 4250 4050 4350
+Wire Wire Line
+	3550 4250 3550 4350
+$Comp
+L power:GND #PWR?
+U 1 1 5DFC7A41
+P 3550 4350
+AR Path="/5DF7E971/5DFC7A41" Ref="#PWR?"  Part="1" 
+AR Path="/5DFC2583/5DFC7A41" Ref="#PWR0123"  Part="1" 
+F 0 "#PWR0123" H 3550 4100 50  0001 C CNN
+F 1 "GND" H 3555 4177 50  0000 C CNN
+F 2 "" H 3550 4350 50  0001 C CNN
+F 3 "" H 3550 4350 50  0001 C CNN
+	1    3550 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DFC7A3B
+P 4050 4350
+AR Path="/5DF7E971/5DFC7A3B" Ref="#PWR?"  Part="1" 
+AR Path="/5DFC2583/5DFC7A3B" Ref="#PWR0122"  Part="1" 
+F 0 "#PWR0122" H 4050 4100 50  0001 C CNN
+F 1 "GND" H 4055 4177 50  0000 C CNN
+F 2 "" H 4050 4350 50  0001 C CNN
+F 3 "" H 4050 4350 50  0001 C CNN
+	1    4050 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 3950 4050 4050
+Wire Wire Line
+	3950 3950 4050 3950
+Wire Wire Line
+	3550 3950 3550 4050
+Wire Wire Line
+	3550 3950 3650 3950
+Connection ~ 3550 3950
+Wire Wire Line
+	3550 3650 3550 3950
+Connection ~ 4050 3950
+Wire Wire Line
+	4050 3750 4050 3950
+$Comp
+L Device:C_Small C?
+U 1 1 5DFC7A2B
+P 4050 4150
+AR Path="/5DF7E971/5DFC7A2B" Ref="C?"  Part="1" 
+AR Path="/5DFC2583/5DFC7A2B" Ref="C20"  Part="1" 
+F 0 "C20" H 3958 4196 50  0000 R CNN
+F 1 "100n" H 3958 4105 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4050 4150 50  0001 C CNN
+F 3 "~" H 4050 4150 50  0001 C CNN
+	1    4050 4150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5DFC7A25
+P 3550 4150
+AR Path="/5DF7E971/5DFC7A25" Ref="C?"  Part="1" 
+AR Path="/5DFC2583/5DFC7A25" Ref="C19"  Part="1" 
+F 0 "C19" H 3458 4196 50  0000 R CNN
+F 1 "100n" H 3458 4105 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3550 4150 50  0001 C CNN
+F 3 "~" H 3550 4150 50  0001 C CNN
+	1    3550 4150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal Y?
+U 1 1 5DFC7A1F
+P 3800 3950
+AR Path="/5DF7E971/5DFC7A1F" Ref="Y?"  Part="1" 
+AR Path="/5DFC2583/5DFC7A1F" Ref="Y2"  Part="1" 
+F 0 "Y2" H 3800 4218 50  0000 C CNN
+F 1 "8M" H 3800 4127 50  0000 C CNN
+F 2 "Crystal:Crystal_HC49-4H_Vertical" H 3800 3950 50  0001 C CNN
+F 3 "~" H 3800 3950 50  0001 C CNN
+	1    3800 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 2100 1900 2100
+Text Label 1900 2100 2    50   ~ 0
+USB_N
+Wire Wire Line
+	1350 2200 1900 2200
+Text Label 1900 2200 2    50   ~ 0
+USB_P
+Text HLabel 1350 2100 0    50   BiDi ~ 0
+USB_N
+Text HLabel 1350 2200 0    50   BiDi ~ 0
+USB_P
+Wire Wire Line
+	6400 3550 6800 3550
+Wire Wire Line
+	6400 3650 6800 3650
 Wire Bus Line
 	4400 4050 4400 6450
 Wire Bus Line

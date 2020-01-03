@@ -6,6 +6,11 @@ K N-Channel MOSFET
 F http://www.aosmd.com/pdfs/datasheet/AO3402.pdf
 $ENDCMP
 #
+$CMP GL850G
+D USB 2.0 Hub controller
+F https://www.kean.com.au/oshw/WR703N/GL850G%20USB%20Hub%201.07.pdf
+$ENDCMP
+#
 $CMP K1-5202UA-03
 D 5-way directional stick switch
 F https://datasheet.lcsc.com/szlcsc/1809211421_Korean-Hroparts-Elec-K1-5202UA-03_C145899.pdf
