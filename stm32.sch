@@ -154,16 +154,16 @@ $EndComp
 Text Label 4700 2450 0    50   ~ 0
 SWRST
 Wire Wire Line
-	1350 1000 1900 1000
-Text Label 1900 1000 2    50   ~ 0
+	1750 1000 2300 1000
+Text Label 2300 1000 2    50   ~ 0
 SWCLK
 Wire Wire Line
-	1350 1100 1900 1100
-Text Label 1900 1100 2    50   ~ 0
+	1750 1100 2300 1100
+Text Label 2300 1100 2    50   ~ 0
 SWDIO
 Wire Wire Line
-	1350 1200 1900 1200
-Text Label 1900 1200 2    50   ~ 0
+	1750 1200 2300 1200
+Text Label 2300 1200 2    50   ~ 0
 SWRST
 Text HLabel 1350 1000 0    50   Input ~ 0
 SWCLK
@@ -1226,6 +1226,45 @@ Wire Wire Line
 	6400 3550 6800 3550
 Wire Wire Line
 	6400 3650 6800 3650
+$Comp
+L Jumper:SolderJumper_2_Open JP1
+U 1 1 5E13BB4F
+P 1600 1000
+F 0 "JP1" H 1800 1050 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 1600 1114 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1600 1000 50  0001 C CNN
+F 3 "~" H 1600 1000 50  0001 C CNN
+	1    1600 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP2
+U 1 1 5E154A90
+P 1600 1100
+F 0 "JP2" H 1800 1150 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 1600 1214 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1600 1100 50  0001 C CNN
+F 3 "~" H 1600 1100 50  0001 C CNN
+	1    1600 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP3
+U 1 1 5E154F58
+P 1600 1200
+F 0 "JP3" H 1800 1250 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 1600 1314 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1600 1200 50  0001 C CNN
+F 3 "~" H 1600 1200 50  0001 C CNN
+	1    1600 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 1000 1450 1000
+Wire Wire Line
+	1450 1100 1350 1100
+Wire Wire Line
+	1350 1200 1450 1200
 Wire Bus Line
 	4400 4050 4400 6450
 Wire Bus Line
