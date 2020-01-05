@@ -2232,7 +2232,7 @@
     (tags capacitor)
     (path /5EA8F1AB/5E168D4E)
     (attr smd)
-    (fp_text reference C33 (at 2.8 0 90) (layer F.SilkS)
+    (fp_text reference C33 (at -2.15 0 180) (layer F.SilkS)
       (effects (font (size 0.82 0.82) (thickness 0.15)))
     )
     (fp_text value 100n (at 0 1.43 90) (layer F.Fab)
