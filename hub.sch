@@ -226,8 +226,6 @@ NoConn ~ 7550 3700
 NoConn ~ 7550 3800
 NoConn ~ 7550 3500
 NoConn ~ 7550 3600
-NoConn ~ 6350 4100
-NoConn ~ 6350 4200
 $Comp
 L Device:R_Small R?
 U 1 1 5E19501F
@@ -753,4 +751,146 @@ F 3 "" H 8500 1800 50  0001 C CNN
 	1    8500 1800
 	-1   0    0    -1  
 $EndComp
+$Comp
+L antboard:K24C02D-O U?
+U 1 1 5E1D3F3C
+P 5800 5850
+F 0 "U?" H 6228 5646 50  0000 L CNN
+F 1 "K24C02D-O" H 6228 5555 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 5800 5850 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1809261012_Hua-Hong-NEC-K24C02_C84964.pdf" H 5800 5850 50  0001 C CNN
+	1    5800 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E1D5771
+P 6100 5550
+F 0 "#PWR?" H 6100 5400 50  0001 C CNN
+F 1 "+3V3" H 6115 5723 50  0000 C CNN
+F 2 "" H 6100 5550 50  0001 C CNN
+F 3 "" H 6100 5550 50  0001 C CNN
+	1    6100 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 5550 6100 5750
+Wire Wire Line
+	6100 6450 6100 6550
+$Comp
+L power:GND #PWR?
+U 1 1 5E1D752C
+P 6100 6550
+AR Path="/5DFC2583/5E1D752C" Ref="#PWR?"  Part="1" 
+AR Path="/5E157F68/5E1D752C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6100 6300 50  0001 C CNN
+F 1 "GND" H 6105 6377 50  0000 C CNN
+F 2 "" H 6100 6550 50  0001 C CNN
+F 3 "" H 6100 6550 50  0001 C CNN
+	1    6100 6550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 4100 6150 4100
+Wire Wire Line
+	6150 4200 6350 4200
+Text Label 6150 4100 0    50   ~ 0
+SCL
+Text Label 6150 4200 0    50   ~ 0
+SDA
+Text Label 4900 5950 0    50   ~ 0
+SCL
+Text Label 4900 6050 0    50   ~ 0
+SDA
+$Comp
+L Device:R_Small R?
+U 1 1 5E1E2F1C
+P 5600 5750
+AR Path="/5DF7E971/5E1E2F1C" Ref="R?"  Part="1" 
+AR Path="/5DFC2583/5E1E2F1C" Ref="R?"  Part="1" 
+AR Path="/5E157F68/5E1E2F1C" Ref="R?"  Part="1" 
+F 0 "R?" H 5659 5796 50  0000 L CNN
+F 1 "10k" H 5659 5705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5600 5750 50  0001 C CNN
+F 3 "~" H 5600 5750 50  0001 C CNN
+	1    5600 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E1E2F22
+P 5500 5550
+F 0 "#PWR?" H 5500 5400 50  0001 C CNN
+F 1 "+3V3" H 5515 5723 50  0000 C CNN
+F 2 "" H 5500 5550 50  0001 C CNN
+F 3 "" H 5500 5550 50  0001 C CNN
+	1    5500 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E1E7739
+P 5500 5750
+AR Path="/5DF7E971/5E1E7739" Ref="R?"  Part="1" 
+AR Path="/5DFC2583/5E1E7739" Ref="R?"  Part="1" 
+AR Path="/5E157F68/5E1E7739" Ref="R?"  Part="1" 
+F 0 "R?" H 5441 5796 50  0000 R CNN
+F 1 "10k" H 5441 5705 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5500 5750 50  0001 C CNN
+F 3 "~" H 5500 5750 50  0001 C CNN
+	1    5500 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 5650 5500 5600
+Wire Wire Line
+	5600 5600 5600 5650
+Wire Wire Line
+	5500 5550 5500 5600
+$Comp
+L Device:R_Small R?
+U 1 1 5E1FC098
+P 5250 5750
+AR Path="/5DF7E971/5E1FC098" Ref="R?"  Part="1" 
+AR Path="/5DFC2583/5E1FC098" Ref="R?"  Part="1" 
+AR Path="/5E157F68/5E1FC098" Ref="R?"  Part="1" 
+F 0 "R?" H 5191 5796 50  0000 R CNN
+F 1 "10k" H 5191 5705 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5250 5750 50  0001 C CNN
+F 3 "~" H 5250 5750 50  0001 C CNN
+	1    5250 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 5650 5250 5600
+Connection ~ 5500 5600
+Wire Wire Line
+	5700 6250 5250 6250
+Wire Wire Line
+	5250 5850 5250 6250
+Connection ~ 5250 6250
+Wire Wire Line
+	5250 6250 4900 6250
+Wire Wire Line
+	4900 5950 5600 5950
+Wire Wire Line
+	4900 6050 5500 6050
+Wire Wire Line
+	5500 5850 5500 6050
+Connection ~ 5500 6050
+Wire Wire Line
+	5500 6050 5700 6050
+Wire Wire Line
+	5600 5850 5600 5950
+Connection ~ 5600 5950
+Wire Wire Line
+	5600 5950 5700 5950
+Wire Wire Line
+	5500 5600 5600 5600
+Wire Wire Line
+	5250 5600 5500 5600
+Text Label 4900 6250 0    50   ~ 0
+EE_~WE
+Text Notes 6350 5800 0    50   ~ 0
+It may be needed not to place\nthe pull-up on SCL as the\ndatasheet for the hub is incoherent\nwith the I²C spec.
 $EndSCHEMATC
