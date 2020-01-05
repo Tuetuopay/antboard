@@ -3,6 +3,8 @@
 An STM32 dev board with 1.27mm headers for GPIOs that got a bit over the top.
 Yeah this is a kitchen sink board now...
 
+![antboard](board.png)
+
 ## Features
 
 * STM32F205 microcontroller
@@ -18,7 +20,3 @@ Yeah this is a kitchen sink board now...
 * 5 RGB LEDs, just because blinkies
 
 All components can be sourced on the usual distributors, and for cheap on LCSC.
-
-## Eye candy
-
-![antboard](board.png)
