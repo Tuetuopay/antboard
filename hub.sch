@@ -341,8 +341,6 @@ Text Label 4300 5200 2    50   ~ 0
 CLK
 Wire Wire Line
 	3000 5200 2900 5200
-Text Label 2500 5200 0    50   ~ 0
-CLKEN
 $Comp
 L Device:R_Small R?
 U 1 1 5E1AA065
@@ -370,9 +368,6 @@ F 3 "" H 2900 4800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2900 5100 2900 5200
-Connection ~ 2900 5200
-Wire Wire Line
-	2900 5200 2500 5200
 Wire Wire Line
 	2900 4900 2900 4800
 Wire Wire Line
@@ -804,49 +799,20 @@ Text Label 4900 6050 0    50   ~ 0
 SDA
 $Comp
 L Device:R_Small R?
-U 1 1 5E1E2F1C
-P 5600 5750
-AR Path="/5DF7E971/5E1E2F1C" Ref="R?"  Part="1" 
-AR Path="/5DFC2583/5E1E2F1C" Ref="R?"  Part="1" 
-AR Path="/5E157F68/5E1E2F1C" Ref="R36"  Part="1" 
-F 0 "R36" H 5659 5796 50  0000 L CNN
-F 1 "10k" H 5659 5705 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 5600 5750 50  0001 C CNN
-F 3 "~" H 5600 5750 50  0001 C CNN
-	1    5600 5750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR058
-U 1 1 5E1E2F22
-P 5500 5550
-F 0 "#PWR058" H 5500 5400 50  0001 C CNN
-F 1 "+3V3" H 5515 5723 50  0000 C CNN
-F 2 "" H 5500 5550 50  0001 C CNN
-F 3 "" H 5500 5550 50  0001 C CNN
-	1    5500 5550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R?
 U 1 1 5E1E7739
-P 5500 5750
+P 5550 5750
 AR Path="/5DF7E971/5E1E7739" Ref="R?"  Part="1" 
 AR Path="/5DFC2583/5E1E7739" Ref="R?"  Part="1" 
 AR Path="/5E157F68/5E1E7739" Ref="R35"  Part="1" 
-F 0 "R35" H 5441 5796 50  0000 R CNN
-F 1 "10k" H 5441 5705 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 5500 5750 50  0001 C CNN
-F 3 "~" H 5500 5750 50  0001 C CNN
-	1    5500 5750
-	1    0    0    -1  
+F 0 "R35" H 5608 5796 50  0000 L CNN
+F 1 "10k" H 5608 5705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5550 5750 50  0001 C CNN
+F 3 "~" H 5550 5750 50  0001 C CNN
+	1    5550 5750
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	5500 5650 5500 5600
-Wire Wire Line
-	5600 5600 5600 5650
-Wire Wire Line
-	5500 5550 5500 5600
+	5550 5650 5550 5600
 $Comp
 L Device:R_Small R?
 U 1 1 5E1FC098
@@ -863,26 +829,16 @@ F 3 "~" H 5250 5750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5250 5650 5250 5600
-Connection ~ 5500 5600
 Wire Wire Line
 	5700 6250 5250 6250
 Wire Wire Line
 	5250 5850 5250 6250
 Connection ~ 5250 6250
 Wire Wire Line
-	5500 5850 5500 6050
-Connection ~ 5500 6050
+	5550 5850 5550 6050
+Connection ~ 5550 6050
 Wire Wire Line
-	5500 6050 5700 6050
-Wire Wire Line
-	5600 5850 5600 5950
-Connection ~ 5600 5950
-Wire Wire Line
-	5600 5950 5700 5950
-Wire Wire Line
-	5500 5600 5600 5600
-Wire Wire Line
-	5250 5600 5500 5600
+	5550 6050 5700 6050
 Text Label 4900 6250 0    50   ~ 0
 EE_~WE
 Text Notes 6350 5800 0    50   ~ 0
@@ -905,7 +861,25 @@ Wire Wire Line
 Wire Wire Line
 	4800 6250 5250 6250
 Wire Wire Line
-	4700 6050 5500 6050
+	4700 6050 5550 6050
 Wire Wire Line
-	4700 5950 5600 5950
+	4700 5950 5700 5950
+Connection ~ 5400 5600
+Wire Wire Line
+	5250 5600 5400 5600
+Wire Wire Line
+	5400 5600 5550 5600
+Wire Wire Line
+	5400 5550 5400 5600
+$Comp
+L power:+3V3 #PWR058
+U 1 1 5E1E2F22
+P 5400 5550
+F 0 "#PWR058" H 5400 5400 50  0001 C CNN
+F 1 "+3V3" H 5415 5723 50  0000 C CNN
+F 2 "" H 5400 5550 50  0001 C CNN
+F 3 "" H 5400 5550 50  0001 C CNN
+	1    5400 5550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
