@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_ST_STM32F2:STM32F205RBTx U3
-U 1 1 5DFC281B
-P 5700 4050
-F 0 "U3" H 6200 2200 50  0000 C CNN
-F 1 "STM32F205RBTx" H 6200 2300 50  0000 C CNN
-F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 5100 2350 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00237391.pdf" H 5700 4050 50  0001 C CNN
-	1    5700 4050
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+3V3 #PWR0124
 U 1 1 5DFC7E60
 P 5750 2150
@@ -1279,6 +1268,8 @@ Wire Wire Line
 	3800 3350 3900 3350
 Wire Wire Line
 	3900 3350 3900 3400
+Text Notes 5900 7550 0    50   ~ 0
+Red: 8mA@1.73V\nGreen: 5mA@2.7V\nBlue: 3mA@2.49V
 Wire Bus Line
 	4400 4050 4400 6450
 Wire Bus Line
@@ -1287,6 +1278,15 @@ Wire Bus Line
 	4500 5150 4500 6450
 Wire Bus Line
 	8300 5250 8300 6450
-Text Notes 5900 7550 0    50   ~ 0
-Red: 8mA@1.73V\nGreen: 5mA@2.7V\nBlue: 3mA@2.49V
+$Comp
+L MCU_ST_STM32F4:STM32F405RGTx U3
+U 1 1 5EFAF3AD
+P 5700 4050
+F 0 "U3" H 6150 2150 50  0000 C CNN
+F 1 "STM32F405RGTx" H 6150 2250 50  0000 C CNN
+F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 5100 2350 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00037051.pdf" H 5700 4050 50  0001 C CNN
+	1    5700 4050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

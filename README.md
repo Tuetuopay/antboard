@@ -7,7 +7,7 @@ Yeah this is a kitchen sink board now...
 
 ## Features
 
-* STM32F205 microcontroller
+* STM32F405 microcontroller
 * 3 independant IO banks routed to 1.27mm headers (1x 10 IO, 2x 5 IO)
   - bidirectional level shifter
   - shifter supply voltage controllable through software
