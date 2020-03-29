@@ -680,8 +680,6 @@ Wire Wire Line
 	5000 4650 4600 4650
 Text Label 4600 4550 0    50   ~ 0
 SCR_D~C
-Text Label 4600 4650 0    50   ~ 0
-SCK_~CS
 Wire Wire Line
 	5350 7350 5750 7350
 Text Label 5750 7350 2    50   ~ 0
@@ -1363,8 +1361,8 @@ F 3 "" H 4750 3350 50  0001 C CNN
 $EndComp
 Text Label 4950 2850 2    50   ~ 0
 VCAP1
-Wire Wire Line
-	2800 5350 2800 5500
+Text Label 4950 2950 2    50   ~ 0
+VCAP2
 $Comp
 L power:GND #PWR?
 U 1 1 5E3156D1
@@ -1379,8 +1377,6 @@ F 3 "" H 2800 5500 50  0001 C CNN
 	1    2800 5500
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	1850 5400 1850 5500
 $Comp
 L power:GND #PWR?
 U 1 1 5E344111
@@ -1395,18 +1391,55 @@ F 3 "" H 1850 5500 50  0001 C CNN
 	1    1850 5500
 	-1   0    0    -1  
 $EndComp
-Text Label 2650 5200 2    50   ~ 0
-SCK_~CS
 Wire Wire Line
-	2250 5200 2650 5200
+	2800 5350 2800 5500
+Wire Wire Line
+	1850 5400 1850 5500
+$Comp
+L Device:R_Small R?
+U 1 1 5F0C692E
+P 2350 5350
+AR Path="/5DF7E971/5F0C692E" Ref="R?"  Part="1" 
+AR Path="/5DFC2583/5F0C692E" Ref="R37"  Part="1" 
+F 0 "R37" H 2409 5396 50  0000 L CNN
+F 1 "100k" H 2409 5305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2350 5350 50  0001 C CNN
+F 3 "~" H 2350 5350 50  0001 C CNN
+F 4 "C327826" H 2350 5350 50  0001 C CNN "LCSC P/N"
+F 5 "MR06X1003FTL" H 2350 5350 50  0001 C CNN "MFR P/N"
+	1    2350 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F0C716A
+P 2350 5500
+AR Path="/5F0C716A" Ref="#PWR?"  Part="1" 
+AR Path="/5DF7E971/5F0C716A" Ref="#PWR?"  Part="1" 
+AR Path="/5DFC2583/5F0C716A" Ref="#PWR064"  Part="1" 
+F 0 "#PWR064" H 2350 5250 50  0001 C CNN
+F 1 "GND" H 2355 5327 50  0000 C CNN
+F 2 "" H 2350 5500 50  0001 C CNN
+F 3 "" H 2350 5500 50  0001 C CNN
+	1    2350 5500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 5200 2350 5200
+Wire Wire Line
+	2350 5200 2350 5250
+Wire Wire Line
+	2350 5450 2350 5500
+Text Label 2650 5000 2    50   ~ 0
+SCR_~RST
+Text Label 4600 4650 0    50   ~ 0
+SCR_~RST
 Wire Bus Line
 	4400 4050 4400 6450
-Wire Bus Line
-	8300 5250 8300 6450
 Wire Bus Line
 	1100 6450 4400 6450
 Wire Bus Line
 	4500 5150 4500 6450
-Text Label 4950 2950 2    50   ~ 0
-VCAP2
+Wire Bus Line
+	8300 5250 8300 6450
 $EndSCHEMATC
