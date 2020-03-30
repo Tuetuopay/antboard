@@ -600,26 +600,26 @@ Entry Wire Line
 	8300 5350 8400 5250
 Entry Wire Line
 	8300 5250 8400 5150
-Text Label 8400 5450 0    50   ~ 0
-SW4
-Wire Wire Line
-	8800 5450 8400 5450
-Text Label 8400 5350 0    50   ~ 0
-SW3
-Wire Wire Line
-	8800 5350 8400 5350
 Text Label 8400 5150 0    50   ~ 0
-SW2
+SW4
 Wire Wire Line
 	8800 5150 8400 5150
 Text Label 8400 5550 0    50   ~ 0
-SW1
+SW3
 Wire Wire Line
 	8800 5550 8400 5550
 Text Label 8400 5250 0    50   ~ 0
-SW0
+SW2
 Wire Wire Line
 	8800 5250 8400 5250
+Text Label 8400 5450 0    50   ~ 0
+SW1
+Wire Wire Line
+	8800 5450 8400 5450
+Text Label 8400 5350 0    50   ~ 0
+SW0
+Wire Wire Line
+	8800 5350 8400 5350
 Wire Wire Line
 	10000 5350 10000 5450
 Wire Wire Line
