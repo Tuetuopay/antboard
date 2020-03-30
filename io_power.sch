@@ -731,42 +731,12 @@ Wire Wire Line
 Connection ~ 4050 2200
 Wire Wire Line
 	4050 2200 4100 2200
-$Comp
-L power:GND #PWR?
-U 1 1 5DE8B0E0
-P 4050 4950
-AR Path="/5DE8B0E0" Ref="#PWR?"  Part="1" 
-AR Path="/5DF7E971/5DE8B0E0" Ref="#PWR?"  Part="1" 
-AR Path="/5DFC2583/5DE8B0E0" Ref="#PWR?"  Part="1" 
-AR Path="/5EA8F1AB/5DE8B0E0" Ref="#PWR028"  Part="1" 
-F 0 "#PWR028" H 4050 4700 50  0001 C CNN
-F 1 "GND" H 4055 4777 50  0000 C CNN
-F 2 "" H 4050 4950 50  0001 C CNN
-F 3 "" H 4050 4950 50  0001 C CNN
-	1    4050 4950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3550 3650 3450 3650
 Wire Wire Line
 	3450 3650 3450 2150
 Wire Wire Line
 	3550 3850 3450 3850
-$Comp
-L power:GND #PWR?
-U 1 1 5DE9ACDD
-P 3450 4950
-AR Path="/5DE9ACDD" Ref="#PWR?"  Part="1" 
-AR Path="/5DF7E971/5DE9ACDD" Ref="#PWR?"  Part="1" 
-AR Path="/5DFC2583/5DE9ACDD" Ref="#PWR?"  Part="1" 
-AR Path="/5EA8F1AB/5DE9ACDD" Ref="#PWR011"  Part="1" 
-F 0 "#PWR011" H 3450 4700 50  0001 C CNN
-F 1 "GND" H 3455 4777 50  0000 C CNN
-F 2 "" H 3450 4950 50  0001 C CNN
-F 3 "" H 3450 4950 50  0001 C CNN
-	1    3450 4950
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+3V3 #PWR010
 U 1 1 5DE9B187
@@ -778,8 +748,6 @@ F 3 "" H 3450 2150 50  0001 C CNN
 	1    3450 2150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3450 3850 3450 4950
 $Comp
 L antboard:TCA6424A U5
 U 1 1 5DE0851E
@@ -1510,4 +1478,47 @@ Text Label 1600 1200 2    50   ~ 0
 DRDY
 Text HLabel 1100 1200 0    50   Output ~ 0
 DRDY
+Wire Wire Line
+	3950 4950 3950 5000
+Wire Wire Line
+	4050 5000 4050 4950
+Wire Wire Line
+	3950 5000 4000 5000
+Wire Wire Line
+	4000 5000 4050 5000
+Connection ~ 4000 5000
+$Comp
+L power:GND #PWR?
+U 1 1 5DE8B0E0
+P 4000 5050
+AR Path="/5DE8B0E0" Ref="#PWR?"  Part="1" 
+AR Path="/5DF7E971/5DE8B0E0" Ref="#PWR?"  Part="1" 
+AR Path="/5DFC2583/5DE8B0E0" Ref="#PWR?"  Part="1" 
+AR Path="/5EA8F1AB/5DE8B0E0" Ref="#PWR028"  Part="1" 
+F 0 "#PWR028" H 4000 4800 50  0001 C CNN
+F 1 "GND" H 4005 4877 50  0000 C CNN
+F 2 "" H 4000 5050 50  0001 C CNN
+F 3 "" H 4000 5050 50  0001 C CNN
+	1    4000 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 5000 4000 5050
+$Comp
+L power:GND #PWR?
+U 1 1 5DE9ACDD
+P 3450 5050
+AR Path="/5DE9ACDD" Ref="#PWR?"  Part="1" 
+AR Path="/5DF7E971/5DE9ACDD" Ref="#PWR?"  Part="1" 
+AR Path="/5DFC2583/5DE9ACDD" Ref="#PWR?"  Part="1" 
+AR Path="/5EA8F1AB/5DE9ACDD" Ref="#PWR011"  Part="1" 
+F 0 "#PWR011" H 3450 4800 50  0001 C CNN
+F 1 "GND" H 3455 4877 50  0000 C CNN
+F 2 "" H 3450 5050 50  0001 C CNN
+F 3 "" H 3450 5050 50  0001 C CNN
+	1    3450 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 3850 3450 5050
 $EndSCHEMATC
